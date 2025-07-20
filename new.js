@@ -1,22 +1,21 @@
-        
-        
-        const parent = React.createElement("div", {id: "parent" }, [
-            React.createElement("div", { id: "child" }, [
-                React.createElement("h1", {}, "I'm an h1 tag"),
-                React.createElement("h2", {}, "I'm an h2 tag"),
-            ]),
-            React.createElement("div", { id: "child2" }, [
-                React.createElement("h1", {}, "I'm an h1 tag"),
-                React.createElement("h2", {}, "I'm an h2 tag"),
-            ]),
-        ]);
-        
-        console.log(parent)
-        // comb this is a OBJECT!
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 
-        const root = ReactDOM.createRoot(document.getElementById("root"));
+
+//This is a react element
+const heading = React.createElement("h1", {id: "heading"}, "hi from React installed from npm");
 
 
-        root.render(parent);
-        
+//This is a react element using JSX syntax
+
+const jsxHeading = <h1>hi from ReactJSX</h1>
+//Jsx => is converted into React Element by Babel
+
+//react element is then renderd on browser as a DOM element
+//than DOM element is rendered on the browser as HTML element by react-dom
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+
+root.render(jsxHeading);
+

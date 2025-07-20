@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "my react learning",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html --public-url ./"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,11 @@
   "homepage": "https://github.com/f-endev/Learn-React#readme",
   "devDependencies": {
     "parcel": "^2.15.4"
+  },
+  
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "reactdom": "^2.0.0"
   }
 }
