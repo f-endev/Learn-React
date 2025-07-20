@@ -1,0 +1,24 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "my react learning",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f-endev/Learn-React.git"
+  },
+  "keywords": [
+    "learning"
+  ],
+  "author": "kushaln",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/f-endev/Learn-React/issues"
+  },
+  "homepage": "https://github.com/f-endev/Learn-React#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}
